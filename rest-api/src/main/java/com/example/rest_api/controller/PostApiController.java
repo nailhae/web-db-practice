@@ -1,7 +1,7 @@
 package com.example.rest_api.controller;
 
 import com.example.rest_api.model.BookRequest;
-import com.example.rest_api.model.ContactRequest;
+import com.example.rest_api.model.UserRequest;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,7 +14,7 @@ public class PostApiController {
 	}
 
 	@PostMapping("/contact")
-	public void contact(@RequestBody ContactRequest contactRequest) {
-		System.out.println(contactRequest.toString());
+	public void contact(@RequestBody UserRequest userRequest) {
+		System.out.println(userRequest.toString());
 	}
 }
