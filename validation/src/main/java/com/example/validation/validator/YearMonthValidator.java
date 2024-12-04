@@ -1,13 +1,11 @@
 package com.example.validation.validator;
 
-import com.example.validation.annotation.PhoneNumber;
 import com.example.validation.annotation.YearMonth;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.regex.Pattern;
 
 public class YearMonthValidator implements ConstraintValidator<YearMonth, String> {
 
